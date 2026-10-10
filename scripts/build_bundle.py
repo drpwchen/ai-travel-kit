@@ -14,6 +14,7 @@ ORDER = [
     "START.md",
     "interview.md",
     "templates/my-travel-kit.md",
+    "templates/trip-file.md",
     "templates/trip-review.md",
     "phases/plan.md",
     "phases/before.md",
@@ -21,6 +22,8 @@ ORDER = [
     "phases/after.md",
     "guide/timeline.md",
     "guide/baselines.md",
+    "guide/first-trip-and-solo.md",
+    "guide/collaborate.md",
     "guide/packing.md",
     "guide/weather-clothing.md",
     "guide/emergencies.md",
@@ -37,7 +40,7 @@ HEADER = """# AI 旅行工具箱 — 全部內容（ALL-IN-ONE）
 > 給 AI：以下每一段以 `=== FILE: 路徑 ===` 開頭，內文提到的檔名（例：`guide/timeline.md`）就是指這裡對應的段落。
 > 請從第一段 START.md 開始照著做。你已經有全部內容，START.md §6（讀不到網址時）可以略過；
 > 但仍然只依當前階段使用對應段落，不要一次把所有清單丟給使用者。
-> 提醒使用者：下次開新對話，要把這個檔案（或網址）連同他的總檔一起給 AI。
+> 提醒使用者：下次開新對話，要把這個檔案（或網址）＋他的總檔＋（有進行中的旅行時）這趟檔一起給 AI。
 > 本檔由 `scripts/build_bundle.py` 自動產生，請勿直接修改。
 """
 
@@ -46,6 +49,11 @@ def build() -> str:
     parts = [HEADER]
     for rel in ORDER:
         text = (ROOT / rel).read_text(encoding="utf-8").strip()
+        if rel == "START.md":
+            # 合併檔裡不需要逐檔網址清單
+            head, sep, _ = text.partition("所有檔案的直接網址")
+            if sep:
+                text = head.rstrip() + "\n\n（逐檔網址見 GitHub 上的 START.md；你已經有全部內容。）"
         parts.append(f"\n\n=== FILE: {rel} ===\n\n{text}\n")
     return "".join(parts)
 

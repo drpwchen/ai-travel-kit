@@ -20,6 +20,7 @@
 | 挪威（渡輪、公車、火車） | **Entur** API：geocoder `https://api.entur.io/geocoder/v1/autocomplete?text=<站名>` 取站點 id → journey-planner GraphQL（header `ET-Client-Name`）。==當天出發前再查即時資訊==，官網 PDF 可能過期 |
 | 瑞典斯德哥爾摩 SL | `journeyplanner.integration.sl.se` 行程規劃；`transport.integration.sl.se/v1/sites/<id>/departures` 即時到站 |
 | 荷蘭 | 9292.nl（全交通方式）、NS app（火車）；可直接感應信用卡或手機進出站 |
+| 韓國 | 地圖用 Naver Map 或 KakaoMap（Google Maps 在韓國的步行與開車導航不完整 🔄）；交通卡 T-money 或觀光用卡（🔄） |
 | 日本 | 換乘查詢：Jorudan、NAVITIME、Google Maps；JR 各公司官網（JR 東日本、JR 西日本、JR 九州…）的周遊券與網路訂票；高速巴士比價網站 |
 | 歐洲長途巴士 | FlixBus（便宜、常誤點 1–2 小時，不要接太緊的行程）、Rome2Rio（看有哪些交通方式） |
 | 道路狀況 | 各國公路主管機關網站（例：挪威 vegvesen.no、瑞典 trafikverket.se） |
@@ -27,6 +28,8 @@
 很多城市的大眾運輸可以直接感應信用卡或手機（不用買票卡）；先查，再算一日券划不划算。機場巴士常不在都市票系統內。
 
 ## 路線與地圖
+
+==先查目的地主流的地圖 app==：有些國家（例：韓國、中國）Google Maps 導航不完整，要改用當地 app（🔄）。叫車 app 也依國家不同（例：東南亞 Grab）。
 
 - **OSRM**（`router.project-osrm.org`）開車路線；`routing.openstreetmap.de` 有步行、腳踏車版本。
   ==檢查結果裡有沒有渡輪段==：曾經把 41 公里的渡輪算成公路。
