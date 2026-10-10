@@ -5,34 +5,35 @@
 
 ## 天氣
 
-- **Open-Meteo**（`https://api.open-meteo.com/v1/forecast?latitude=..&longitude=..&hourly=temperature_2m,apparent_temperature,wind_speed_10m,wind_gusts_10m,precipitation,cloud_cover_low`）：
-  全球逐時預報，免金鑰；另有 archive API 可查過去的逐時天氣（寫檢討用）。
-- **met.no Locationforecast 2.0**（`https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=..&lon=..`，要帶 User-Agent）：
-  北歐最準；前約 48 小時逐時，之後每 6 小時。
+- **Open-Meteo**：全球逐時預報（含陣風、低雲、體感溫度），免金鑰；另有 archive API 查過去的逐時天氣（寫檢討用）。
+- **met.no Locationforecast**：北歐最準（要帶 User-Agent）。
 - 判讀：山上陣風 × 1.5、毛毛雨到山上要穿雨衣（`guide/baselines.md`）。
-- 日本：日本氣象廳（JMA）預報；**櫻花、紅葉預測**看日本氣象協會 tenki.jp 或 Weathernews（🔄 預測通常在季節前 1–3 個月公布、會更新多次）。
-- 極光：NOAA 3 天 Kp 指數預報＋當地雲量＋天夠不夠黑。經驗上高緯度（約北緯 68°）Kp 不高也有機會，越往南需要越高；只能說「有機會」，不保證看得到。
+- 日本櫻花、紅葉預測：日本氣象協會 tenki.jp 或 Weathernews（🔄 季節前 1–3 個月公布、會更新多次）。
+- 極光：NOAA Kp 預報＋當地雲量＋天夠不夠黑。高緯度（約北緯 68°）Kp 不高也有機會，越往南需要越高；只能說「有機會」。
 
 ## 大眾運輸與班次
 
-| 地區 | 查法 |
+==班次一律查官方來源，當天出發前再查一次即時資訊==；官網上的 PDF 時刻表可能是舊的。
+
+| 地區 | 查法與要注意的 |
 |---|---|
-| 挪威（渡輪、公車、火車） | **Entur** API：geocoder `https://api.entur.io/geocoder/v1/autocomplete?text=<站名>` 取站點 id → journey-planner GraphQL（header `ET-Client-Name`）。==當天出發前再查即時資訊==，官網 PDF 可能過期 |
-| 瑞典斯德哥爾摩 SL | `journeyplanner.integration.sl.se` 行程規劃；`transport.integration.sl.se/v1/sites/<id>/departures` 即時到站 |
-| 荷蘭 | 9292.nl（全交通方式）、NS app（火車）；可直接感應信用卡或手機進出站 |
-| 韓國 | 地圖用 Naver Map 或 KakaoMap（Google Maps 在韓國的步行與開車導航不完整 🔄）；交通卡 T-money 或觀光用卡（🔄） |
-| 日本 | 換乘查詢：Jorudan、NAVITIME、Google Maps；JR 各公司官網（JR 東日本、JR 西日本、JR 九州…）的周遊券與網路訂票；高速巴士比價網站 |
-| 歐洲長途巴士 | FlixBus（便宜、常誤點 1–2 小時，不要接太緊的行程）、Rome2Rio（看有哪些交通方式） |
-| 道路狀況 | 各國公路主管機關網站（例：挪威 vegvesen.no、瑞典 trafikverket.se） |
+| 挪威 | Entur（渡輪、公車、火車都在裡面，有免金鑰 API） |
+| 瑞典斯德哥爾摩 | SL 行程規劃與即時到站 |
+| 荷蘭 | 9292.nl、NS app；可直接感應信用卡或手機進出站 |
+| 韓國 | Naver Map 或 KakaoMap（Google Maps 在韓國步行與開車導航一向不完整；2026-02 韓國已核准地圖資料，實際能不能用要實測 🔄） |
+| 日本 | Jorudan、NAVITIME、Google Maps；JR 各公司官網的周遊券。東海道、山陽、九州新幹線三邊合計超過 160 cm 的行李要預約特大行李座位（🔄），或改用宅配寄行李 |
+| 歐洲長途巴士 | FlixBus 便宜但常誤點 1–2 小時，不要接太緊的行程；Rome2Rio 看有哪些交通方式 |
+| 道路狀況 | 各國公路主管機關網站（例：挪威 vegvesen.no） |
 
 很多城市的大眾運輸可以直接感應信用卡或手機（不用買票卡）；先查，再算一日券划不划算。機場巴士常不在都市票系統內。
+感應付款**一人一張卡或一支手機**，進出站用同一個（手機錢包和實體卡算兩個，混用會被收兩次最高票價）。
+義大利等地的紙本火車票上車前要在月台打票，沒打等同無票。
 
 ## 路線與地圖
 
 ==先查目的地主流的地圖 app==：有些國家（例：韓國、中國）Google Maps 導航不完整，要改用當地 app（🔄）。叫車 app 也依國家不同（例：東南亞 Grab）。
 
-- **OSRM**（`router.project-osrm.org`）開車路線；`routing.openstreetmap.de` 有步行、腳踏車版本。
-  ==檢查結果裡有沒有渡輪段==：曾經把 41 公里的渡輪算成公路。
+- OSRM 等開放路線服務：==檢查結果裡有沒有渡輪段==，曾經把 41 公里的渡輪算成公路。
 - **Google Maps 多點路線連結**：`https://www.google.com/maps/dir/?api=1&origin=..&destination=..&waypoints=a|b|c`
   （手機版約只吃 3 個中途點，太多就拆段；起點用「目前位置」）。
 - 離線：Google Maps 離線區域、HERE WeGo、Organic Maps。

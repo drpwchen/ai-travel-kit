@@ -12,7 +12,7 @@ AI 知道你通常晚多久出門、爬山多快、跟誰去、最怕什麼、�
 打開你常用的 AI（網頁版或 App 都可以），貼上這句：
 
 ```
-請讀 https://github.com/drpwchen/ai-travel-kit 的 START.md，照裡面的說明幫我。
+請讀 https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/START.md ，照裡面的說明幫我。
 ```
 
 AI 會問你現在在哪一步：
@@ -55,7 +55,7 @@ git clone https://github.com/drpwchen/ai-travel-kit
 | 檔案 | 內容 |
 |---|---|
 | [`START.md`](START.md) | 給 AI 的工作說明：判斷階段、規則、怎麼保存總檔 |
-| [`interview.md`](interview.md) | 訪談題庫（快速版 5 題＋完整版），每題寫了「回答會改變什麼」 |
+| [`interview.md`](interview.md) | 訪談題庫（快速版 6 題＋完整版），每題寫了「回答會改變什麼」 |
 | [`templates/`](templates/) | 「我的旅行總檔」（一人一份）、「這趟檔」（一趟一份，多人可共用）、「旅行檢討」的格式 |
 | [`phases/`](phases/) | 規劃、出發前、旅途中、回來後，各階段 AI 要做的事 |
 | [`guide/`](guide/) | 時間軸、預設估計值、第一次出國與獨旅、多人一起規劃、行李清單、天氣與穿著、突發狀況與理賠、查詢工具、全家行程網頁、出國開會與出差 |

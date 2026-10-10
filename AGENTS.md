@@ -17,5 +17,5 @@
 - 內容以繁體中文、台灣出發的旅客為主；給 AI 看的指示寫在各檔開頭的引言區塊。
 - ==不放任何真實個資或真實的個人數字==：範例一律虛構並標示。
 - 會變的事實（規定、價格、服務網址）標 🔄 或查詢年月。
-- 改了任何 `.md` 後跑 `python scripts/build_bundle.py` 重新產生 `ALL-IN-ONE.md`（`--check` 只檢查不寫入）。
+- 改了任何 `.md` 後跑 `python scripts/build_bundle.py`（Mac／Linux 用 `python3`） 重新產生 `ALL-IN-ONE.md`（`--check` 只檢查不寫入）。
 - 新增檔案時，同步更新 `START.md` §6 的網址清單、`README.md` 的檔案表、`scripts/build_bundle.py` 的 `ORDER`。
