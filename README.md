@@ -50,6 +50,17 @@ git clone https://github.com/drpwchen/ai-travel-kit
 
 在資料夾裡開 Claude Code／Codex，說「幫我建旅行總檔」。你的總檔會存在 `my/`，這個資料夾不會被 git 追蹤。
 
+## 邀請試用 🙏
+
+這是剛發布的早期版本，很需要有人真的拿去用。不管你下一趟是家族旅行、一個人出國、還是出國開會，都歡迎試試看，然後告訴我：
+
+- 你用哪個 AI（ChatGPT、Gemini、Claude、Claude Code…）、讀不讀得到網址
+- 訪談有沒有哪題問得莫名其妙、或少問了什麼
+- 產出的總檔、行程、清單，哪裡不好用
+- 你接了哪些工具（Gmail、排程…），AI 有沒有好好用上
+
+回饋請[開 issue](https://github.com/drpwchen/ai-travel-kit/issues)。==不要貼你的總檔或任何個資==，描述發生什麼就好。
+
 ## 隱私
 
 - 工具箱**不會**問你護照號、訂位代號、保單號、卡號這類資料，也請你不要貼給 AI。總檔只記「哪裡找得到」。
