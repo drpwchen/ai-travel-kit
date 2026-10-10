@@ -20,6 +20,7 @@ ORDER = [
     "phases/before.md",
     "phases/during.md",
     "phases/after.md",
+    "guide/capabilities.md",
     "guide/timeline.md",
     "guide/baselines.md",
     "guide/first-trip-and-solo.md",

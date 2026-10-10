@@ -10,7 +10,10 @@
   - `my/my-travel-kit.md`：他的旅行總檔
   - `my/trips/<YYYY-MM>_<地點>/`：每一趟的摘要、行程、檢討
 - 開始前先看 `my/my-travel-kit.md` 存不存在：存在就讀它，從 §12 判斷階段。
-- ==不要把 `my/` 底下的任何東西加進 git、不要 push==。
+- ==不要把 `my/` 底下的任何東西加進這個工具箱的 git、不要 push 到這個工具箱的 remote==。
+- 使用者要備份、換電腦用、或跟旅伴共用：照 `guide/capabilities.md` §4，在 `my/` 另建 git，推到**他自己的 private repo**（建之前確認名稱與私人，建完驗 `visibility` 是 `PRIVATE`）。
+  ==不要叫使用者 fork 這個 repo 存資料==：公開 repo 的 fork 一定是公開的。
+- 你能執行程式：讀照片 EXIF、GPX 算速度，寫小程式排程提醒，這些都直接幫使用者做（`guide/capabilities.md`）；登入、授權、對外送出留給他。
 
 ## 如果使用者要改工具箱本身（貢獻）
 
