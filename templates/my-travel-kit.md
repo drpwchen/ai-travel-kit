@@ -14,7 +14,7 @@
 ```markdown
 # 我的旅行總檔
 
-最後更新：YYYY-MM-DD｜用法：每次找 AI 幫忙旅行時，給它工具箱 https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/START.md
+最後更新：YYYY-MM-DD｜用法：每次找 AI 幫忙旅行時，給它工具箱 https://github.com/drpwchen/ai-travel-kit
 （讀不到網址就給 ALL-IN-ONE.md）＋這份總檔＋（有進行中的旅行時）這趟檔。
 
 ## 0. 給 AI 的話

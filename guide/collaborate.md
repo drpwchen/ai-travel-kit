@@ -16,7 +16,7 @@
 ## 2. 開場（主辦）
 
 1. 主辦照 `phases/plan.md` 建這趟檔，放進共用文件，頂端寫「最後更新 日期 by 誰｜正本在：○○｜維護者：○○」。
-2. 傳連結給同行者，附一句話：「在你的 AI 貼上『請讀 https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/START.md ，照裡面的說明幫我』，再把這份文件的**內容**複製貼上（多數 AI 打不開共用文件的連結），選 G。」
+2. 傳連結給同行者，附一句話：「在你的 AI 貼上『請讀 https://github.com/drpwchen/ai-travel-kit 的 START.md，照裡面的說明幫我』，再把這份文件的**內容**複製貼上（多數 AI 打不開共用文件的連結），選 G。」
    對方的 AI 讀不到網址：把 ALL-IN-ONE.md 一起傳（一對一傳，不要丟大群組）。
 
 ## 3. 同行者加入（START §1 的 G）

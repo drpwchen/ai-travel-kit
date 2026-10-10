@@ -160,9 +160,9 @@
 
 | 平台 | 建議做法 |
 |---|---|
-| Claude 網頁版／App | 開一個 Project（專案），把總檔上傳到專案知識庫；專案指示寫「先讀 https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/START.md 」。每趟旅行在專案裡開新對話；一個人的旅行，這趟檔也可以放進專案。 |
+| Claude 網頁版／App | 開一個 Project（專案），把總檔上傳到專案知識庫；專案指示寫「先讀 https://github.com/drpwchen/ai-travel-kit 的 START.md」。每趟旅行在專案裡開新對話；一個人的旅行，這趟檔也可以放進專案。 |
 | ChatGPT | 有 Projects 就同上。專案記憶設成只限此專案。 |
-| Gemini | 建一個 Gem：指示貼上 START.md 的網址，知識檔上傳總檔＋`ALL-IN-ONE.md`（Gem 不一定會去讀網址）。 |
+| Gemini | 建一個 Gem：指示貼上 START.md 的網址，知識檔上傳總檔。 |
 | Claude Code／Codex | `git clone` 這個 repo；總檔存成 `my/my-travel-kit.md`，每趟在 `my/trips/<YYYY-MM>_<地點>/` 放這趟檔（`my/` 在 `.gitignore`，不會被上傳）。 |
 | 免費版、額度少、或不確定有沒有專案功能 | 總檔和這趟檔各存成一個文字檔或雲端文件；每次新對話上傳（或貼上）工具箱網址＋總檔＋這趟檔。 |
 | 不會用 GitHub、常用 Google 雲端與 LINE | 總檔存在自己的雲端硬碟（不共用）；多人同行的這趟檔用一份共用的雲端文件。LINE 只傳短的（問卷、改動提案、每晚公告），長文件傳連結（LINE 的檔案會過期）。 |
@@ -185,28 +185,3 @@
 - 請使用者打開 `ALL-IN-ONE.md`（全部內容合成一個檔）上傳；貼不進去就上傳檔案，還不行就分兩次：
   先貼 START、interview、templates 三段建總檔，到規劃階段再貼其他段。
 - 或請使用者下載 repo 的 zip 上傳。
-
-所有檔案的直接網址（純文字，適合 AI 讀取）：
-
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/START.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/interview.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/templates/my-travel-kit.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/templates/trip-file.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/templates/trip-review.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/phases/plan.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/phases/before.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/phases/during.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/phases/after.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/guide/timeline.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/guide/baselines.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/guide/first-trip-and-solo.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/guide/collaborate.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/guide/packing.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/guide/weather-clothing.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/guide/emergencies.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/guide/tools.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/guide/trip-website.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/guide/conference.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/examples/sample-my-travel-kit.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/examples/sample-trip-review.md
-- https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/ALL-IN-ONE.md

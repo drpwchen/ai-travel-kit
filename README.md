@@ -12,7 +12,7 @@ AI 知道你通常晚多久出門、爬山多快、跟誰去、最怕什麼、�
 打開你常用的 AI（網頁版或 App 都可以），貼上這句：
 
 ```
-請讀 https://raw.githubusercontent.com/drpwchen/ai-travel-kit/main/START.md ，照裡面的說明幫我。
+請讀 https://github.com/drpwchen/ai-travel-kit 的 START.md，照裡面的說明幫我。
 ```
 
 AI 會問你現在在哪一步：

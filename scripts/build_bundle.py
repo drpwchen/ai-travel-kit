@@ -49,11 +49,6 @@ def build() -> str:
     parts = [HEADER]
     for rel in ORDER:
         text = (ROOT / rel).read_text(encoding="utf-8").strip()
-        if rel == "START.md":
-            # 合併檔裡不需要逐檔網址清單
-            head, sep, _ = text.partition("所有檔案的直接網址")
-            if sep:
-                text = head.rstrip() + "\n\n（逐檔網址見 GitHub 上的 START.md；你已經有全部內容。）"
         parts.append(f"\n\n=== FILE: {rel} ===\n\n{text}\n")
     return "".join(parts)
 
