@@ -15,6 +15,8 @@ AI 知道你通常晚多久出門、爬山多快、跟誰去、最怕什麼、�
 請讀 https://github.com/drpwchen/ai-travel-kit 的 START.md，照裡面的說明幫我。
 ```
 
+> 🔄 2026-10-11 實測：ChatGPT（含免費版）、Claude 網頁版讀得到這個網址；**Gemini 讀不到 GitHub 網址**（會請你把內容貼上），建議先用另外兩家。
+
 AI 會問你現在在哪一步：
 
 | 你在 | AI 會做 |

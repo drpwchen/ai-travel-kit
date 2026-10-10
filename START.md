@@ -167,7 +167,7 @@
 |---|---|
 | Claude 網頁版／App | 開一個 Project（專案），把總檔上傳到專案知識庫；專案指示寫「先讀 https://github.com/drpwchen/ai-travel-kit 的 START.md」。每趟旅行在專案裡開新對話；一個人的旅行，這趟檔也可以放進專案。 |
 | ChatGPT | 有 Projects 就同上。專案記憶設成只限此專案。 |
-| Gemini | 建一個 Gem：指示貼上 START.md 的網址，知識檔上傳總檔。 |
+| Gemini | 🔄 2026-10 實測 Gemini 讀不到 GitHub 網址：建一個 Gem，把 `ALL-IN-ONE.md` 和總檔都上傳成知識檔，指示寫「照知識檔裡 START.md 的說明幫我」。 |
 | Claude Code／Codex | `git clone` 這個 repo；總檔存成 `my/my-travel-kit.md`，每趟在 `my/trips/<YYYY-MM>_<地點>/` 放這趟檔（`my/` 在 `.gitignore`，不會被上傳）。要備份或換電腦用，由你幫他把 `my/` 推到他自己的 **private** repo（`guide/capabilities.md` §4）。 |
 | 免費版、額度少、或不確定有沒有專案功能 | 總檔和這趟檔各存成一個文字檔或雲端文件；每次新對話上傳（或貼上）工具箱網址＋總檔＋這趟檔。 |
 | 不會用 GitHub、常用 Google 雲端與 LINE | 總檔存在自己的雲端硬碟（不共用）；多人同行的這趟檔用一份共用的雲端文件。LINE 只傳短的（問卷、改動提案、每晚公告），長文件傳連結（LINE 的檔案會過期）。 |

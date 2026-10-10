@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.3 — 2026-10-11
+
+- 網頁版實測：ChatGPT（免費版）、Claude 網頁版讀得到 repo 網址並照 START.md 流程走；Gemini（Flash）讀不到 repo 網址與 raw 網址。README 註明，START §5 的 Gemini 存檔做法改成上傳 `ALL-IN-ONE.md`。
+
 ## v0.1.2 — 2026-10-10
 
 - 能力對照（`guide/capabilities.md`）：AI 先確認自己有哪些能力、有就直接用；接上 Gmail、雲端硬碟、排程、程式執行、瀏覽器分別多做得到什麼，缺的一句話告訴使用者怎麼接；新手能代辦的步驟由 AI 做。
